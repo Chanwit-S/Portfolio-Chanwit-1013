@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* ข้อความอยู่ด้านบน */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background-color: teal;
+            color: white;
+        }
+        h1 {
+            margin-top: 50px; /* ระยะห่างจากด้านบน */
+            font-size: 48px;
+        }
+        .content-container {
+            display: flex;
+            justify-content: center; /* จัดให้อยู่กลาง */
+            align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+            flex-grow: 1; /* ขยายให้เต็มพื้นที่ */
+            margin-top: -10px; /* ลดระยะห่างจากหัวข้อ */
+        }
+        .info {
+            width: 100%; /* ความกว้างของกล่องข้อความ */
+            text-align: left; /* จัดข้อความไปทางซ้าย */
+            padding: 100px; /* ระยะห่างในกล่องข้อความ */
+            font-size: 25px; /* ขนาดตัวอักษร */
+        }
+        .profile-image {
+            width: 500px; /* ขนาดของรูปภาพ */
+            height: 500px; /* ขนาดของรูปภาพ */
+            margin-left: -150px; /* ลดระยะห่างจากกล่องข้อความ */
+            border-radius: 8px; /* มุมโค้งของรูป */
+            object-fit: cover; /* ให้รูปไม่ผิดสัดส่วน */
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-around; /* จัดให้ปุ่มอยู่ซ้าย กลาง ขวา */
+            width: 100%;
+            margin-top: 40px; /* ระยะห่างจากชื่อ */
+            margin-bottom: 60px; /* เพิ่มระยะห่างจากขอบด้านล่าง */
+        }
+        .nav-button {
+            background-color: #fff; /* สีพื้นหลังปุ่ม */
+            color: teal; /* สีตัวอักษรปุ่ม */
+            border: none;
+            border-radius: 40px;
+            padding: 20px 30px; /* ขนาดของปุ่ม */
+            cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ไปที่ปุ่ม */
+            font-size: 20px; /* ขนาดตัวอักษรปุ่ม */
+        }
+        .nav-button.middle {
+            margin-left: -20px; /* ขยับปุ่มกลางไปทางซ้าย */
+        }
+        .nav-button:hover {
+            background-color: #e0e0e0; /* เปลี่ยนสีเมื่อชี้ */
+        }
+        .red-text {
+            color: rgb(230, 84, 84); /* สีแดงสำหรับข้อความ */
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+
+    <div class="content-container">
+        <div class="info">
+            <div class="red-text">ประวัติส่วนตัว!!</div>
+            ชื่อ <span class="red-text">:</span> นายชาญวิทย์ ศรีศุภลักษณ์  ชื่อเล่น <span class="red-text">:</span> วิทย์<br>
+            อายุ <span class="red-text">:</span> 18  วัน/เดือน/ปีเกิด <span class="red-text">:</span> 24/01/2549  กรุ๊ปเลือด O<br>
+            เชื้อชาติ <span class="red-text">:</span> ไทย  สัญชาติ <span class="red-text">:</span> ไทย  ศาสนา <span class="red-text">:</span> พุทธ<br>
+            ที่อยู่ <span class="red-text">:</span> ดาว ปีเตอร์ ปาร์คเกอร์ 13270/999<br>
+            ลักษณะนิสัย <span class="red-text">:</span> ว่านอนสอนง่าย (´▽`ʃ♡ƪ)<br>
+            งานอดิเรก <span class="red-text">:</span> ล่าฝัน 24 ชม.<br><br>
+
+            <div class="red-text">ช่องทางการติดต่อ!!</div>
+            IG <span class="red-text">:</span> Anthony Edward Stark<br>
+            LINE <span class="red-text">:</span> ¯\_(ツ)_/¯<br>
+            เบอร์ <span class="red-text">:</span> 1112<br>
+        </div>
+        <img src="47395.jpg" alt="About Me Image" class="profile-image"> 
+    </div>
+
+    <div class="nav-container">
+        <a href="portfolio.html"><button class="nav-button">Portfolio</button></a> <!-- เชื่อมโยงไปยัง Portfolio -->
+        <a href="education.html"><button class="nav-button middle">Education</button></a> <!-- เชื่อมโยงไปยัง Education -->
+        <a href="Skill.html"><button class="nav-button">Skill</button></a> <!-- เชื่อมโยงไปยัง Skill -->
+    </div>
+</body>
+</html>
+
